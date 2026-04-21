@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h3 style="text-align:center;">Available Courses</h3>
+
+<div class="course-container">
+    {% for c in courses %}
+    <div class="course">
+        <h4>{{ c.name }}</h4>
+        <p>Seats Left: {{ c.seats }}</p>
+
+        <a href="/register_course/{{ c.id }}">
+            Register
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

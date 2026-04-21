@@ -1,0 +1,134 @@
+/* 🌍 Body */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #ACB6E5);
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔷 Header */
+h2 {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
+
+/* 📦 Container */
+.container {
+    padding: 20px;
+}
+
+/* 🧾 Forms (Login/Register) */
+form {
+    background: white;
+    width: 320px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* 🔘 Buttons */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* 🔗 Links */
+a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 🏠 Dashboard */
+.dashboard {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dashboard a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: #2ecc71;
+    color: white;
+    border-radius: 5px;
+}
+
+.dashboard a:hover {
+    background: #27ae60;
+}
+
+/* 📚 Courses Page */
+.course-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course {
+    background: white;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.course h4 {
+    margin: 10px 0;
+}
+
+.course p {
+    margin: 5px 0;
+}
+
+/* 🟢 Register Button */
+.course a {
+    display: inline-block;
+    margin-top: 10px;
+    background: #e67e22;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.course a:hover {
+    background: #d35400;
+}
+
+/* 🔔 Messages */
+.success {
+    color: green;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    text-align: center;
+}

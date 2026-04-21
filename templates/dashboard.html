@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="dashboard">
+    <h3>Welcome {{ current_user.username }}</h3>
+
+    <a href="/courses">View Courses</a>
+    <a href="/logout">Logout</a>
+</div>
+
+{% endblock %}
