@@ -21,7 +21,7 @@ def home():
     return redirect('/login')
 
 
-# 🔐 Register
+#  Register
 @app.route('/register', methods=['GET','POST'])
 def register():
     if request.method == 'POST':
@@ -36,7 +36,7 @@ def register():
     return render_template('register.html')
 
 
-# 🔐 Login
+#  Login
 @app.route('/login', methods=['GET','POST'])
 def login():
     if request.method == 'POST':
@@ -51,14 +51,14 @@ def login():
     return render_template('login.html')
 
 
-# 🏠 Dashboard
+#  Dashboard
 @app.route('/dashboard')
 @login_required
 def dashboard():
     return render_template('dashboard.html')
 
 
-# 📚 View Courses
+#  View Courses
 @app.route('/courses')
 @login_required
 def courses():
@@ -66,7 +66,7 @@ def courses():
     return render_template('courses.html', courses=all_courses)
 
 
-# ✅ Register for Course
+#  Register for Course
 @app.route('/register_course/<int:id>')
 @login_required
 def register_course(id):
@@ -82,7 +82,7 @@ def register_course(id):
     return redirect('/courses')
 
 
-# 🚪 Logout
+#  Logout
 @app.route('/logout')
 @login_required
 def logout():
@@ -90,7 +90,7 @@ def logout():
     return redirect('/login')
 
 
-# 🛠️ Create DB
+#  Create DB
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
